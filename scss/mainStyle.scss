@@ -24,9 +24,9 @@
 		list-style: none;
 	}
 	.nav-links a {
-		text-shadow: 0.1em 0.1em 0.1em white;
+		text-shadow: 0.1em 0.1em 0.1em black;
 
-		color: black;
+		color: white;
 	}
 	.logo {
 		a {
@@ -80,9 +80,10 @@ header {
 		z-index: -1;
 	}
 	.heroText {
-		text-shadow: 0.1em 0.1em 0.1em silver;
+		text-shadow: 0.1em 0.1em 0.1em black;
+		color: white;
 		position: absolute;
-		top: 200px;
+		// top: 200px;
 		h1 {
 			font-size: 60px;
 		}
@@ -95,5 +96,61 @@ header {
 		height: 100%;
 		width: 100%;
 		flex-direction: column;
+	}
+}
+.aboutUs {
+	background-color: #504f59;
+	color: white;
+	.title {
+		// font-family: 'Great Vibes', cursive;
+		// font-family: 'Courgette', cursive;
+		font-family: 'Alfa Slab One', cursive;
+		letter-spacing: 3px;
+		font-size: 50px;
+		color: whitesmoke;
+		margin-bottom: 30px;
+	}
+	.aboutUsText {
+		width: 40%;
+		margin: 100px;
+		margin-bottom: 20px;
+		margin-right: 0;
+		height: auto;
+	}
+	.aboutUsImg {
+		margin-top: 150px;
+		margin-right: 50px;
+		width: 35%;
+		height: 10%;
+		border-radius: 8px;
+	}
+	.aboutUsContent {
+		align-content: center;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		display: flex;
+	}
+
+	.aboutFlower {
+		flex-direction: row-reverse;
+		align-content: center;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		display: flex;
+		.aboutFlowerText {
+			width: 40%;
+			margin: 50px;
+			margin-top: 20px;
+			margin-left: 0;
+			height: auto;
+		}
+		.aboutFlowerImg {
+			margin-top: 150px;
+			margin-left: 100px;
+			margin-bottom: 40px;
+			width: 35%;
+			height: 10%;
+			border-radius: 8px;
+		}
 	}
 }
