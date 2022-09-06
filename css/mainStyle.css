@@ -6,6 +6,19 @@
           box-sizing: border-box;
 }
 
+*::-webkit-scrollbar {
+  width: 5px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #b8b8b8;
+  border-radius: 5px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #191919;
+}
+
 .navbar {
   width: 100vw;
   z-index: 20;
@@ -22,7 +35,6 @@
   padding: 20px;
   color: white;
   font-family: 'Great Vibes', cursive;
-  /* NAVBAR MENU */
 }
 
 .navbar a {
@@ -67,15 +79,15 @@
   font-size: 25px;
 }
 
-.navbar li {
+.navbar .menu li {
+  -webkit-transition: background-color 0.6s;
+  transition: background-color 0.6s;
   padding: 5px 14px;
+  border-radius: 10px;
 }
 
 .navbar .menu li:hover {
   background-color: rgba(0, 0, 0, 0.4);
-  border-radius: 5px;
-  -webkit-transition: background-color 0.6s;
-  transition: background-color 0.6s;
 }
 
 header {
@@ -151,7 +163,7 @@ header .heroText h2 {
 }
 
 .aboutUs .aboutUsImg {
-  margin-top: 150px;
+  margin-top: 50px;
   margin-right: 50px;
   width: 35%;
   height: 10%;
@@ -203,5 +215,152 @@ header .heroText h2 {
   width: 35%;
   height: 10%;
   border-radius: 8px;
+}
+
+.offer {
+  padding-top: 50px;
+  width: 100%;
+  background-color: #563f56;
+}
+
+.offer .title {
+  font-family: 'Alfa Slab One', cursive;
+  letter-spacing: 3px;
+  font-size: 50px;
+  margin-left: 100px;
+}
+
+.offer .secoundTitle {
+  letter-spacing: 3px;
+  font-size: 20px;
+  margin-left: 100px;
+}
+
+.offer .offerCards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: background-color 0.6s;
+  transition: background-color 0.6s;
+}
+
+.offer .offerCards .offerCard {
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #6f506f;
+  margin: 30px;
+}
+
+.offer .offerCards .offerCard .cardImg {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.offer .offerCards .offerCard .cardText {
+  font-size: 35px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.offer .offerCards .offerCard .cardSecoundText {
+  font-size: 20px;
+  text-align: center;
+}
+
+.offer .offerCards .offerCard .cardSecoundText {
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+}
+
+.offer .offerCards .offerCard:hover {
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+          box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.contact {
+  padding-bottom: 50px;
+  width: 100%;
+  position: relative;
+  color: white;
+  background-position: center;
+  background-size: cover;
+  z-index: 0;
+  background-attachment: fixed;
+  background-image: url("../img/kontakt.jpg");
+}
+
+.contact .title {
+  padding-top: 30px;
+  font-family: 'Alfa Slab One', cursive;
+  letter-spacing: 3px;
+  font-size: 50px;
+  margin-left: 100px;
+}
+
+.contact .contactShadow {
+  top: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: -1;
+}
+
+.contact .contactText {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact .contactText h4 {
+  margin: 20px;
+  font-size: 40px;
+}
+
+.contact .contactText p {
+  font-size: 25px;
+  margin: 10px;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 10vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #212529;
+}
+
+footer p {
+  font-family: 'Anonymous Pro', monospace;
+  font-size: 30px;
+  color: whitesmoke;
 }
 /*# sourceMappingURL=mainStyle.css.map */
